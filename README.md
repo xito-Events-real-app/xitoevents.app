@@ -1,2 +1,3 @@
-# xitoevents.com
-making an ios app 
+# Welcome to your Lovable project
+
+TODO: Document your project here
