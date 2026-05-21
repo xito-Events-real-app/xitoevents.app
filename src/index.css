@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 11%;
+
+    /* Brand crimson #c0182e */
+    --primary: 350 78% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 350 82% 35%;
+
+    --secondary: 6 60% 98%;
+    --secondary-foreground: 0 0% 11%;
+
+    --muted: 6 40% 97%;
+    --muted-foreground: 0 0% 53%;
+
+    --accent: 350 100% 85%;
+    --accent-foreground: 350 78% 42%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 94%;
+    --input: 0 0% 91%;
+    --ring: 350 78% 42%;
+
+    /* Brand custom */
+    --brand: 350 78% 42%;             /* #c0182e */
+    --brand-light: 350 100% 85%;      /* #ffb3be */
+    --brand-soft: 6 60% 98%;          /* #fdf8f8 */
+    --brand-soft-border: 6 35% 92%;   /* #f0e8e8 */
+    --brand-dark: 350 80% 5%;         /* #1a0408 */
+    --brand-dark-2: 350 75% 14%;      /* #3d0a14 */
+    --brand-dark-3: 350 75% 24%;      /* #6b1020 */
+    --ink: 0 0% 11%;                  /* #1c1c1c */
+
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-dark)) 0%, hsl(var(--brand-dark-2)) 40%, hsl(var(--brand-dark-3)) 70%, hsl(var(--brand)) 100%);
+    --gradient-modal-header: linear-gradient(135deg, hsl(var(--brand-dark)), hsl(var(--brand-dark-2)));
+    --gradient-cat-1: linear-gradient(135deg, #8b1a2e, #c0182e);
+    --gradient-cat-2: linear-gradient(135deg, #2d1b4e, #5a3a8a);
+    --gradient-cat-3: linear-gradient(135deg, #1a3a2e, #2d6b4e);
+    --gradient-cat-4: linear-gradient(135deg, #3a2010, #8b4a20);
+    --gradient-cat-5: linear-gradient(135deg, #1a2a3a, #2a4a6a);
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  .font-display { font-family: 'Playfair Display', serif; }
+}
